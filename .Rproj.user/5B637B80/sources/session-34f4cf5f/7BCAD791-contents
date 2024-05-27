@@ -1,0 +1,58 @@
+---
+### Title page
+title: "PhD Evaluation: 9-month Report" # The main title of your thesis (not including possible subtitles)
+subtitle: | 
+author: "Aamir Sohail" # Your full name (including middle names if applicable)
+date: "June 2023" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"
+
+### Committee
+# Fill in each of your "promotores" below, corresponding to the form you submitted to the graduate school.
+# Copy-paste the 4 subfields (starting with " - title:") if you have more than two, or delete one entry if you have only one promotor.
+promotores: 
+# for example:
+- title: Dr. # either "prof.dr" for full professors, or "dr." for others
+  initials: Lei
+  surname: Zhang
+  affiliation: University of Birmingham
+- title: Professor
+  initials: Patricia L.
+  surname: Lockwood
+  affiliation: University of Birmingham
+one_promotor: false # set to true if you have only 1 promotor. Then the heading will be "Promotor" (singular), instead of "Promotores".
+
+### Book settings
+documentclass: book # default LaTeX book class
+book_size: false # "true" if you want to render a pdf for printing as a book; "false" if you want to print loose pages
+           # if book_size is set to false, forces A4 paper size, and the "oneside" classoption
+           # if book_size is set to true, forces standard "thesis B5 size" (170mm wide by 240mm high), and the "twoside" classoption
+# geometry: "left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm" # use this if you want to change the margins
+            # 2.5cm equal margins are often recommended by printers (so when book_size: true)
+fontsize: 12pt # 12pt is recommened when book_size is false; 10 or 11pt is recommended when book_size is true
+lang: en # default language for the thesis. Change to en-GB or en-US if you want a specific flavor of English (or to nl for Dutch)
+site: bookdown::bookdown_site # to get a "Build" button in RStudio to render the book
+output:
+  # settings for html output
+  bookdown::gitbook:
+    config:
+      toc: 
+        #this text will print on top ("before") or at the bottom ("after") of the table of contents
+        before: | 
+          <li><a href="./">Aamir Sohail's 9-month report</a></li>
+        after: |
+          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+#   pandoc_args: [ "--csl", "apa.csl" ] # download the citation style of your choice from https://www.zotero.org/styles, then fill in here
+  # settings for pdf output
+  bookdown::pdf_book: 
+    template: template.tex
+    keep_tex: yes
+    #pandoc_args: [ "--csl", "apa.csl" ] # download the citation style of your choice from
+    citation_package: none # to use .csl-files to apply same citation style to html and pdf. You can also use a LaTeX package, e.g. biblatex. This provides much more customizability, but it is not as easy to apply a particular style, and it will only work in pdf output. https://www.zotero.org/styles, then fill in here
+indent: true # indent new paragraphs, instead of leaving whitespace
+links-as-notes: true # in the pdf, print hyperlink URLS as footnotes (as they can't be clicked on)
+bibliography: thesis.bib # bib-file containing bibliographic information on all works you want to cite
+link-citations: true # make clickable hyperlinks from in-text citations to bibliography at the end
+---
+
+```{r, include = FALSE, child = if (knitr::is_html_output()) '_00-preface.Rmd'}
+# see the 00-preface.Rmd file, which will only show in the html version
+```

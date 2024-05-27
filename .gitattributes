@@ -1,0 +1,18 @@
+# Handle line endings
+* text=auto
+
+# Declare file types
+*.Rmd   text
+*.R     text
+*.md    text
+*.tex   text
+*.bib   text
+*.csv   text
+*.json  text
+*.yml   text
+
+# Binary files
+*.jpg   binary
+*.png   binary
+*.gif   binary
+*.pdf   binary

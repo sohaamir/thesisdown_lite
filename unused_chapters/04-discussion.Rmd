@@ -1,0 +1,9 @@
+# PhD Timeline
+
+I aim to finish setting up the first study by Summer (July-Aug) 2024, performing data collection over the summer/autumn period. I will then analyse and write-up the data during Autumn/Winter 2024/25, in part during an external placement at King’s College London with Toby Wise. During this time, I will concurrently plan the second study and submit the ethics for approval. We will subsequently run the study throughout Spring and Summer of 2025, analysing the data during Autumn/Winter 2025. The intervention study (two groups of n = 20) will be informed by my industry host Alena, with whom I aim to complete a two/three-month placement during Winter 2025-26 (although this is subject to change). After this, I will plan and run the study during Spring-Winter 2026 and analyse the data soon thereafter (Winter 2026/27). I will then spend the remaining 9 months finishing the write-up of the third study, completing another external placement (1-2 months) and writing up my thesis before submitting at the planned end date for my DTP, September 2027.
+
+```{r figure-6-phd-timeline, fig.cap='(ref:caption-figure-6-phd-timeline)', out.width='100%', echo=FALSE}
+knitr::include_graphics("figures/phd_timeline.png", auto_pdf = TRUE)
+```
+
+(ref:caption-figure-6-phd-timeline) **Planned timeline for my PhD.**

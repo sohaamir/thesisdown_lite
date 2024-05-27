@@ -1,0 +1,58 @@
+# Use the rocker/rstudio image as the base
+FROM rocker/rstudio:4.3.2
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    libxml2-dev \
+    libcairo2-dev \
+    libgit2-dev \
+    libglpk40 \
+    libglu1-mesa-dev \
+    libgmp3-dev \
+    libgsl0-dev \
+    libhdf5-dev \
+    libmpfr-dev \
+    libssl-dev \
+    libv8-dev \
+    libzmq3-dev \
+    pandoc \
+    pandoc-citeproc \
+    wget \
+    unzip \
+    gcc \
+    make \
+    libc-dev \
+    texlive-fonts-extra
+
+# Set the timezone
+ENV TZ=Europe/London
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# Install TinyTeX
+RUN wget -qO- "https://yihui.org/tinytex/install-bin-unix.sh" | sh
+ENV PATH="${PATH}:/root/bin"
+RUN /root/.TinyTeX/bin/*/tlmgr path add
+
+# Install the tinytex package
+RUN R -e "install.packages('tinytex', repos='https://cloud.r-project.org/')"
+
+# Install TinyTeX
+RUN Rscript -e 'tinytex::install_tinytex(force = TRUE)'
+
+# Install R packages from CRAN
+RUN R -e "install.packages(c('ggsignif', 'gridExtra', 'plan'), repos='https://cloud.r-project.org/')"
+
+# Install the remotes package
+RUN R -e "install.packages('remotes', repos='https://cloud.r-project.org/')"
+
+# Install R package from GitHub
+RUN R -e "remotes::install_github('lcreteig/amsterdown')"
+
+# Copy your R scripts or project files into the Docker container
+COPY . /your_project_directory
+
+# Set the working directory
+WORKDIR /your_project_directory
+
+# Start the RStudio server
+# CMD ["/usr/bin/rserver", "--server-bind-address=0.0.0.0", "--server-app-name=rstudio", "--server-app-url-suffix=rstudio"]

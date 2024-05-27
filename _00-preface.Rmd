@@ -1,0 +1,22 @@
+# Preface {-}
+
+```{r align='center', out.width='390px', out.height='550px', echo=FALSE, include = knitr::is_html_output()}
+knitr::include_graphics("figures/anxiety.jpg", auto_pdf = TRUE) # show thesis cover
+```
+
+_Anxiety_ (1894), Edvard Munch.
+
+This is the `html` output of Aamir Sohail's 9-month report required for PhD students at the School of Psychology, University of Birmingham. You can view the <i class="fa fa-file-pdf-o"></i> pdf version from the toolbar above.
+
+---
+
+This report was conducted under the supervision of Dr. [Lei Zhang](https://lei-zhang.net/) and Prof. [Patricia L. Lockwood](https://www.birmingham.ac.uk/staff/profiles/psychology/lockwood-patricia) at the School of Psychology, University of Birmingham.
+
+```{=html}
+<p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The online version of this thesis is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+<br>
+<br>
+'Anxiety' by Edvard Munch is in the public domain in its country of origin and other countries and areas where the copyright term is the author's life plus 75 years or fewer. The original, from which the photograph is taken, is property of the Munch Museet, Oslo.</p>
+```
+
+<br>

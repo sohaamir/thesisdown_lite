@@ -1,0 +1,24 @@
+# R-specific files
+*.Rhistory
+*.Rdata
+*.RData
+
+# Compiled output
+_book/
+_bookdown_files/
+*.aux
+*.out
+*.toc
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
