@@ -22,3 +22,4 @@ Thumbs.db
 # Editor-specific files
 .vscode/
 .idea/
+.Rproj.user
