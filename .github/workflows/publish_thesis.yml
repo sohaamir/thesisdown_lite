@@ -28,6 +28,11 @@ jobs:
         run: |
           R -e 'install.packages(c("rmarkdown", "tinytex"))'
 
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
       - name: Render thesis to HTML
         run: Rscript -e 'rmarkdown::render("index.Rmd", output_file = "thesis.html")'
 
