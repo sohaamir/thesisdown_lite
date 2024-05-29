@@ -68,7 +68,7 @@ jobs:
         echo "PATH=/home/runner/.TinyTeX/bin/x86_64-linux:$PATH" >> $GITHUB_ENV
 
     - name: Change working directory
-      run: cd sohaamir/thesisdown_lite
+      run: cd ${{ github.workspace }}
 
     - name: Install R packages
       run: |
