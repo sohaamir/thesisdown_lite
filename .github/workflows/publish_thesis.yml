@@ -21,7 +21,7 @@ jobs:
       
     - name: Install Dependencies
       run: |
-        sudo apt-get install -y pandoc
+        sudo apt-get install -y pandoc pandoc-citeproc
         Rscript -e "install.packages(c('bookdown', 'tinytex'))"
         Rscript -e "tinytex::install_tinytex()"
       
