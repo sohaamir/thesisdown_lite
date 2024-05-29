@@ -4,7 +4,6 @@
 *.RData
 
 # Compiled output
-_book/
 _bookdown_files/
 *.aux
 *.out
