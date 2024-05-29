@@ -22,7 +22,10 @@ jobs:
       uses: actions/upload-pages-artifact@v1
       with:
         path: _book/
-
+        
     - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v1
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: main
+        folder: _book
+        repository-name: sohaamir/sohaamir.github.io
