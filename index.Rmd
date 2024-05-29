@@ -3,7 +3,7 @@
 title: "PhD Evaluation: 9-month Report" # The main title of your thesis (not including possible subtitles)
 subtitle: | 
 author: "Aamir Sohail" # Your full name (including middle names if applicable)
-date: "June 2023" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"
+date: "June 2024" # Your defense date in Dutch: "[weekday] [day in numerics] [name of month] [year]"
 
 ### Committee
 # Fill in each of your "promotores" below, corresponding to the form you submitted to the graduate school.
