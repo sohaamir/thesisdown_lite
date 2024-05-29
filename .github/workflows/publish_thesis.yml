@@ -52,8 +52,8 @@ jobs:
 
     - name: Set timezone
       run: |
-        ln -snf /usr/share/zoneinfo/Europe/London /etc/localtime
-        echo "Europe/London" > /etc/timezone
+        sudo ln -snf /usr/share/zoneinfo/Europe/London /etc/localtime
+        echo "Europe/London" | sudo tee /etc/timezone > /dev/null
 
     - name: Install TinyTeX
       run: |
