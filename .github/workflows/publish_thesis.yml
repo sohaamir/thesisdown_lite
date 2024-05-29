@@ -22,8 +22,8 @@ jobs:
     - name: Install Dependencies
       run: |
         sudo apt-get install -y pandoc
-        install.packages(c('bookdown', 'tinytex'))
-        tinytex::install_tinytex()
+        Rscript -e "install.packages(c('bookdown', 'tinytex'))"
+        Rscript -e "tinytex::install_tinytex()"
       
     - name: Render Book
       run: Rscript -e 'bookdown::render_book("index.Rmd", "bookdown::gitbook")'
