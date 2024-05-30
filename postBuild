@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Install TinyTeX
+Rscript -e "tinytex::install_tinytex(force = TRUE)"
+Rscript -e "tinytex::tlmgr_install(c('lm-math', 'pdftex', 'xetex', 'luatex'))"
+Rscript -e "tinytex::tlmgr_update()"
