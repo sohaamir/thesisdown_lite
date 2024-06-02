@@ -227,6 +227,8 @@ Seow, T. X. F., & Gillan, C. M. (2020). Transdiagnostic Phenotyping Reveals a Ho
 Serra, D. (2021). Decision-making: From neuroscience to neuroeconomics—an overview. Theory and Decision, 91(1), 1–80.
 Spielberger, C. D. (1970). Manual for the State-Trait Anxiety Inventory (Self-evaluation Questionnaire). (No Title).
 
+Sohail, A., & Zhang, L. (2024). Informing the treatment of social anxiety disorder with computational and neuroimaging data. Psychoradiology, kkae010.
+
 Spokas, M. E., & Cardaciotto, L. (2014). Heterogeneity Within Social Anxiety Disorder. In The Wiley Blackwell Handbook of Social Anxiety Disorder (pp. 247–267). John Wiley & Sons, Ltd.
 
 Ströhle, A., Gensichen, J., & Domschke, K. (2018). The Diagnosis and Treatment of Anxiety Disorders. Deutsches Arzteblatt International, 155(37), 611–620.
