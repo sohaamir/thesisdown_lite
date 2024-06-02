@@ -1,6 +1,11 @@
 #!/bin/bash
 
 # Install TinyTeX
-Rscript -e "tinytex::install_tinytex(force = TRUE)"
-Rscript -e "tinytex::tlmgr_install(c('lm-math', 'pdftex', 'xetex', 'luatex'))"
-Rscript -e "tinytex::tlmgr_update()"
+R -e "install.packages('tinytex', repos='https://cloud.r-project.org/')"
+R -e "tinytex::install_tinytex(force = TRUE)"
+R -e "tinytex::tlmgr_install(c('lm-math', 'pdftex', 'xetex', 'luatex'))"
+R -e "tinytex::tlmgr_update()"
+
+# Set the necessary environment variables for TinyTeX
+echo "export PATH=\"/usr/local/texlive/bin/x86_64-linux:\${PATH}\"" >> ${HOME}/.bashrc
+echo "export PATH=\"${HOME}/.TinyTeX/bin/x86_64-linux:\${PATH}\"" >> ${HOME}/.bashrc
