@@ -4,7 +4,7 @@ fig:figure-3-factor-correlations
 fig:figure-4-models
 fig:figure-5-results
 introduction
-uncovering-transdiagnostic-differences-in-experiential-and-observational-learning
+uncovering-transdiagnostic-influences-on-experiential-and-observational-learning-a-study-plan
 introduction-1
 methods
 participants
@@ -14,7 +14,7 @@ planned-analyses-and-results
 factor-analysis
 behavioural-analysis
 computational-modeling
-a-computational-psychiatry-approach-to-social-anxiety
+developing-a-computational-psychiatry-approach-to-social-anxiety
 uncovering-the-neurocomputational-mechanisms-underlying-altered-observational-and-experiential-learning-in-social-anxiety
 background
 study-plan
