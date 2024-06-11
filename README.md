@@ -1,5 +1,9 @@
 # Thesisdown Lite: A Simple Thesisdown Template
 
+<p align="center">
+  <img src="https://github.com/sohaamir/thesisdown_lite/blob/main/img/thesis_cover.png" alt="Thesis Cover" width="300" height="400">
+</p>
+
 ![Static Badge](https://img.shields.io/badge/my-thesis-blue?logo=github)
 
 This repository contains the files for a simple thesis project created using [amsterdown](https://lcreteig.github.io/amsterdown/), a modified version of [thesisdown](https://github.com/ismayc/thesisdown), an R package that allows you to publish both LaTeX and online versions of your thesis written in Markdown. My nine-month thesis is included as an example, but I have changed the template to accommodate a more simple, shorter thesis as the other templates are for full-fledged PhD theses. Note that some functionalities (i.e., BiBTeX) recommended in LaTeX theses are not incorporated in my thesis specifically, but they easily can be.
