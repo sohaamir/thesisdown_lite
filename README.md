@@ -8,7 +8,7 @@
 
 This repository contains the files for a simple thesis project created using [amsterdown](https://lcreteig.github.io/amsterdown/), a modified version of [thesisdown](https://github.com/ismayc/thesisdown), an R package that allows you to publish both LaTeX and online versions of your thesis written in Markdown. My nine-month thesis is included as an example, but I have changed the template to accommodate a more simple, shorter thesis as the other templates are for full-fledged PhD theses. Note that some functionalities (i.e., BiBTeX) recommended in LaTeX theses are not incorporated in my thesis specifically, but they easily can be.
 
-Normally you would be required to install a number of dependencies including [TinyTeX](https://yihui.org/tinytex/), [RMarkdown](https://rmarkdown.rstudio.com/), as well as amsterdown, but I have created a Docker image which launches an RStudio server with all of these installed. If you do not want to work with the files locally, you can launch this repository as a Binder project: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sohaamir/thesisdown_lite/main?urlpath=rstudio)
+Normally you would be required to install a number of dependencies including [TinyTeX](https://yihui.org/tinytex/), [RMarkdown](https://rmarkdown.rstudio.com/), as well as amsterdown, but I have created a Docker image which launches an RStudio server with all of these installed.
 
 If you would instead like to build the Docker image and launch the associated Docker container, please follow the instructions below.
 
